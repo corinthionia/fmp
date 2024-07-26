@@ -3,8 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>로그인 | MiniHome</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>로그인 | MiniHome</title>
+	<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
+    <style>
+        body {
+            font-family: 'Galmuri9', sans-serif;
+        }
+    </style>
 </head>
 <body>
   <h3>로그인 | MiniHome</h3>
