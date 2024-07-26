@@ -11,11 +11,9 @@
   <hr>
   <form method="post">
     이름: <input type="text" name="name"><br>
-    직업: <input type="text" name="password"><br>
+    비밀번호: <input type="text" name="password" placeholder="숫자 4자리"><br>
    <button>입력</button>
   </form>
-  <br>
-  <a href="home">사람목록보기</a>
 </body>
 </html>
 

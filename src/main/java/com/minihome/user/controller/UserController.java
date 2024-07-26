@@ -7,9 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.minihome.user.dto.User;
 import com.minihome.user.model.service.UserService;
+
+import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class UserController {
@@ -24,20 +27,27 @@ public class UserController {
 	}
 	
 	@PostMapping("/login")
-	public String regist(User user, Model model) {
-		System.out.println(">>> POST login");
-		System.out.println("user>>>"+ user);
-		
-		try {
+    public String login(@RequestParam String name,
+                        @RequestParam String password,
+                        HttpSession session, Model model) {
+        User user = new User();
+        user.setName(name);
+        user.setPassword(password);
+        
+        try {
 			service.add(user);
 			
+	        User userFromDB = service.findByName(name);	
+	        session.setAttribute("userId", userFromDB.getId());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		return "redirect:home";
-	}
+        
+        session.setAttribute("username", name);
+       
+        return "redirect:/home";
+    }
 }
 
 

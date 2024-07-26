@@ -26,13 +26,13 @@ public class CommentServiceImpl implements CommentService {
 	}
 
 	@Override
-	public int remove(int id) throws SQLException {
-		return dao.delete(id);
+	public int remove(int commentId) throws SQLException {
+		return dao.delete(commentId);
 	}
 
 	@Override
-	public Comment read(int id) throws SQLException {
-		return dao.select(id);
+	public Comment read(int commentId) throws SQLException {
+		return dao.select(commentId);
 	}
 
 	@Override

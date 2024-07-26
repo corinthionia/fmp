@@ -17,12 +17,13 @@
         <button type="submit">Post Comment</button>
     </form>
 
-    <h3>All Comments</h3>
+    <h3>What friends say</h3>
+    <span>${username}님의 미니홈피</span>
     <ul>
         <c:forEach var="comment" items="${comments}">
             <li>
-                <strong>${comment.username}</strong>: ${comment.commentText}
-                <a href="/comment/delete/${comment.commentId}">Delete</a>
+                ${comment.commentText} (${comment.nickname} <strong>${comment.username}</strong>)
+                <a href="/delete?id=${comment.commentId}">Delete</a>
             </li>
         </c:forEach>
     </ul>

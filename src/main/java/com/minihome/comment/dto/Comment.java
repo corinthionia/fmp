@@ -10,6 +10,13 @@ public class Comment {
     public Comment() {
 		// TODO Auto-generated constructor stub
 	}
+    
+    public Comment(int userId, String nickname, String commentText) {
+		super();
+		this.userId = userId;
+		this.nickname = nickname;
+		this.commentText = commentText;
+	}
 
 	public Comment(int commentId, int userId, String username, String nickname, String commentText) {
 		super();
