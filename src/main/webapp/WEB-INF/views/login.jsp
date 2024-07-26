@@ -7,20 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>로그인 | MiniHome</title>
 	<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
-    <style>
-        body {
-            font-family: 'Galmuri9', sans-serif;
-        }
-    </style>
+	<link rel="stylesheet" href="resources/css/global.css">
+	<link rel="stylesheet" href="resources/css/login.css">
 </head>
 <body>
-  <h3>로그인 | MiniHome</h3>
-  <hr>
-  <form method="post">
-    이름: <input type="text" name="name"><br>
-    비밀번호: <input type="text" name="password" placeholder="숫자 4자리"><br>
-   <button>입력</button>
-  </form>
+	<main>
+		<div class="wrapper">
+			<img src="/resources/images/login_character.png" alt="캐릭터" class="character"/>
+  			<form method="post">
+  				<img src="/resources/images/login_logo.png" alt="로고" class="logo"/>
+  				<div class="input-wrapper">
+					<input type="text" name="name" placeholder="한글 이름">
+    				<input type="password" name="password" placeholder="4자리 숫자 비밀번호">
+    			</div>
+   				<button type="submit">로그인</button>
+ 	 		</form>
+ 	 	</div>
+  	</main>
 </body>
 </html>
 

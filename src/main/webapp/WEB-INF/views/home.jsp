@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
-    <style>
-        body {
-            font-family: 'Galmuri9', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="resources/css/global.css">
+    <link rel="stylesheet" href="resources/css/home.css">
 </head>
 <body>
     <h2>Home</h2>
