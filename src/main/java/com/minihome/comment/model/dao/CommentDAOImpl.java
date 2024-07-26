@@ -62,7 +62,7 @@ public class CommentDAOImpl implements CommentDAO {
 	public Comment select(int commentId) throws SQLException {
 		Connection conn = dbUtil.getConnection();
 		
-		String sql="SELECT u.id AS userId, c.id as commentId, u.name AS username, c.nickname, c.commentText " +
+		String sql="SELECT u.id AS userId, c.id as commentId, u.name AS username, c.nickname, c.commentText, c.createdAt " +
           	  		"FROM comments c " +
           	  		"JOIN users u ON c.userId = u.id" +
 					"WHERE commentId=?";
@@ -79,7 +79,8 @@ public class CommentDAOImpl implements CommentDAO {
 				rs.getInt("userId"),
 				rs.getString("username"),
 				rs.getString("nickname"),
-				rs.getString("commentText")
+				rs.getString("commentText"),
+				rs.getTimestamp("createdAt")
 			);
 		}
 		
@@ -90,7 +91,7 @@ public class CommentDAOImpl implements CommentDAO {
 	public List<Comment> selectAll() throws SQLException {
 		Connection conn = dbUtil.getConnection();
 		
-		String sql = "SELECT u.id AS userId, c.id as commentId, u.name AS username, c.nickname, c.commentText " +
+		String sql = "SELECT u.id AS userId, c.id as commentId, u.name AS username, c.nickname, c.commentText, c.createdAt " +
                 	  "FROM comments c " +
                 	  "JOIN users u ON c.userId = u.id";
 		
@@ -105,7 +106,8 @@ public class CommentDAOImpl implements CommentDAO {
 					rs.getInt("userId"),
 					rs.getString("username"),
 					rs.getString("nickname"),
-					rs.getString("commentText")
+					rs.getString("commentText"),
+					rs.getTimestamp("createdAt")
 			));
 		}
 		

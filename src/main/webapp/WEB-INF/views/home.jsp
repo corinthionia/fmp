@@ -74,13 +74,12 @@
 				                	<span class="comment-nickname">
 				                		(${comment.nickname} <span class="comment-user-name">${comment.username}</span>)
 				                	</span>
+				                	 <span class="comment-createdAt">${comment.createdAt}</span>
+				                	  <a href="/delete?id=${comment.commentId}">
+					                	<img src="/resources/icons/home_delete.svg" alt="삭제 아이콘" class="comment-delete-button">
+				               		 </a>
 				                </span>
-				                
-				                <a href="/delete?id=${comment.commentId}">
-					                <button class="comment-delete-button">
-					                	X
-					                </button>
-				                </a>
+				               
 				            </li>
 				        </c:forEach>
 				    </ul>
