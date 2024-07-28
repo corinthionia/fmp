@@ -13,6 +13,14 @@
 <body>
 	<div class="background">
 		<div class="dashed">
+		<nav>
+			<div class="tab active-tab">홈</div>
+			<div class="tab">프로필</div>
+			<div class="tab">다이어리</div>
+			<div class="tab">쥬크박스</div>
+			<div class="tab">사진첩</div>
+			<div class="tab">방명록</div>
+		</nav>
 		<main>
 			<div class="left-top">
 					<div class="today">
@@ -29,8 +37,11 @@
 					</div>
 					
 					<p class="message">
-						난 슬플 때 힙합을 춰... <br/>
-						Music is my life... ★
+						★━━━━━━ <br/>
+						<br/>
+						ㅂㅂ ㅏ ㅅ ㅑ~!!!<br/>
+						<br/>
+						━━━━━━★
 					</p>
 					
 					<div class="bottom">
@@ -38,21 +49,37 @@
 						<a href="https://github.com/corinthionia" target="_blank">
 							<span class="link">https://github.com/corinthionia</span>
 						</a>
-						<select>
-							<option value="default">★ 일촌 파도타기</option>
-	    					<option value="github">@corinthionia</option>
-	    					<option value="github">하잉</option>
-						</select>
+						<div class="select">
+							★ 일촌 파도타기
+							<div>▼</div>
+						</div>
 					</div>
 				</section>
 			</aside>
 			
 			
 			<div class="right-top">
-					${username}님의 미니홈피 
+				<spam>${username} 님의 미니홈피</spam>
 			</div>
 			<section class="main">
 				<section class="main-content">
+					<h1 class="section-title">Updated news</h1>
+					<div class="news">
+						<ul class="news-list">
+							<li>・ 하나 더 질문!!</li>
+							<li>・ [스크랩] 오늘의 사진</li>
+							<li>・ [스크랩] 흠...</li>
+						</ul>
+						<div class="category">
+							<div>다이어리 <span class="num">3/143</span></div>
+							<div>동영상 <span class="num">5/98</span></div>
+							<div>사진첩 <span class="num">325/1694</span></div>
+							<div>방명록 <span class="num">45/35980</span></div>
+							<div>게시판 <span class="num">5/2401</span></div>
+							<div></div>
+						</div>
+					</div>
+					
 					<h1 class="section-title">Mini Room</h1>
 					<hr>
 					<img src="/resources/images/home_mini_room.png" alt="미니룸" class="mini-room-image"/>
@@ -66,9 +93,9 @@
 				        <button type="submit" id="submit-button">확인</button>
 				    </form>
 				    
-				    <ul>
+				    <ul class="comment-ul">
 				        <c:forEach var="comment" items="${comments}">
-				            <li>
+				            <li class="comment-li">
 				                <span class="comment-text">
 				                	${comment.commentText}
 				                	<span class="comment-nickname">

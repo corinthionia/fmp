@@ -91,14 +91,17 @@ public class CommentDAOImpl implements CommentDAO {
 	public List<Comment> selectAll() throws SQLException {
 		Connection conn = dbUtil.getConnection();
 		
-		String sql = "SELECT u.id AS userId, c.id as commentId, u.name AS username, c.nickname, c.commentText, c.createdAt " +
-                	  "FROM comments c " +
-                	  "JOIN users u ON c.userId = u.id";
+		String sql = "SELECT u.id AS userId, c.id AS commentId, u.name AS username, c.nickname, c.commentText, c.createdAt " +
+	             "FROM comments c " +
+	             "JOIN users u ON c.userId = u.id " +
+	             "ORDER BY c.createdAt DESC";
 		
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		
 		ResultSet rs = pstmt.executeQuery();
 		List<Comment> list= new ArrayList<>();
+		
+		System.out.println(list);
 		
 		while (rs.next()) {
 			list.add(new Comment(

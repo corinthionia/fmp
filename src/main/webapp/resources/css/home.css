@@ -14,12 +14,44 @@
 }
 
 .dashed {
+	position: relative;
 	width: 900px;
 	height: 580px;
 	padding: 8px;
 	border: 2px solid #FFFFFF;
 	border-radius: 12px;
 	border-style: dashed;
+}
+
+nav {
+	position: absolute;
+	width: 64px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	z-index: 2;
+	top: 40px;
+	right: -55px;
+}
+
+.tab {
+	width: 100%;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 8px 8px 0;
+	border: 1px solid #000000;
+	font-size: 12px;
+	color: #FFFFFF;
+	background: #38AEF0;
+	cursor: pointer;
+}
+
+.active-tab {
+	border-left: none;
+	background: #FFFFFF;
+	color: #000000;
 }
 
 main {
@@ -37,6 +69,7 @@ main {
 	overflow: hidden;
 	gap: 8px;
 	padding: 8px;
+	border: 1px solid #000000;
 }
 
 .left-top {
@@ -128,14 +161,29 @@ b {
 	color: #FC7507;
 }
 
-select {
+.select {
 	width: 100%;
 	height: 24px;
 	margin-top: 12px;
-	padding: 0 6px;
 	background: #C0F0FF;
 	border: 2px solid #000000;
 	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0 0 6px;
+	
+	& > div {
+		width: 20px;
+		height: 100%;
+		background: #C4C2C3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 8px;
+		border-left: 2px solid #000000;
+		border-style: inset;
+	}
 }
 
 .right-top {
@@ -160,12 +208,49 @@ select {
 .main-content {
 	width: 100%;
 	height: 100%;
-	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	background: #FFFFFF;
 	overflow: scroll;
+}
+
+.news {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 6px;
+	margin-bottom: 20px;
+	
+	& > .news-list {
+		border-top: 2px solid #ECECEC;
+		font-size: 12px;
+		padding: 8px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		margin: 0;
+	}
+	
+	& > .category {
+		border-top: 3px dotted #ECECEC;
+		font-size: 12px;
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	& > .category > div {
+		padding: 4px 0 2px 8px;
+		border-bottom: 2px dotted #ECECEC;
+		cursor: pointer;
+	}
+}
+
+.num {
+	color: #4689AB;
+	font-size: 10px;
+	font-family: 'Galmuri7';
+	margin-left: 8px;
 }
 
 .section-title {
@@ -184,7 +269,7 @@ select {
 
 hr {
 	border: 1px solid #ECECEC;
-	margin: 2px 0 0 0;
+	margin: 3px 0 0 0;
 }
 
 .mini-room-image {
@@ -237,12 +322,12 @@ input {
 	border: 1px solid #A8A8A8;
 }
 
-ul {
+.comment-ul {
 	width: 100%;
 	padding: 0 12px;
 }
 
-li {
+.comment-li {
 	width: 100%;
 	font-size: 12px;
 	display: flex;
@@ -256,7 +341,7 @@ li {
     }
 }
 
-li::before {
+.comment-li::before {
     content: '•';
     position: absolute; 
     left: 0; 
