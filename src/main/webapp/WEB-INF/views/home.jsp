@@ -19,7 +19,9 @@
 			<div class="tab">다이어리</div>
 			<div class="tab">쥬크박스</div>
 			<div class="tab">사진첩</div>
-			<div class="tab">방명록</div>
+			<div class="tab">
+				<a href="/guestbook">방명록</a>
+			</div>
 		</nav>
 		<main>
 			<div class="left-top">
