@@ -1,18 +1,18 @@
-![minihome1](https://github.com/user-attachments/assets/c21f8a5b-047a-4c46-bc9f-94b6fead5894)
-![minihome2](https://github.com/user-attachments/assets/24c61fc5-04db-4fb3-b104-901d5a5e3464)
-![minihome3](https://github.com/user-attachments/assets/13efba4e-eeb5-45f1-8c1e-86d61dea43bf)
-![minihome4](https://github.com/user-attachments/assets/f5eae0ac-26bc-4abe-95e6-4cc8c48e16c4)
-![minihome5](https://github.com/user-attachments/assets/98546629-eba7-429b-ac1d-a7d4cfa3242f)
-![minihome6](https://github.com/user-attachments/assets/25c9cab9-f5f3-41ef-a739-7412c63b6266)
-![minihome7](https://github.com/user-attachments/assets/d2f09878-67b4-4bc2-8c2f-20782b441a7c)
-![minihome8](https://github.com/user-attachments/assets/719526e8-1157-4e6e-8283-12f140d2f499)
-![minihome9](https://github.com/user-attachments/assets/a4c41066-1b2c-433f-a892-92e584734689)
-![minihome10](https://github.com/user-attachments/assets/590236f9-bd0d-4121-87dd-1f287408bc48)
-![minihome11](https://github.com/user-attachments/assets/a4e1806d-e9f9-46f0-8f0b-a905895a32ca)
-![minihome12](https://github.com/user-attachments/assets/b8d1a5f5-c763-4005-b65c-bc12a2608ce5)
-![minihome13](https://github.com/user-attachments/assets/253a9f4e-9350-477d-a4c8-803e28a69eda)
-![minihome14](https://github.com/user-attachments/assets/ac13be81-ef85-45f8-889e-9f2bbe176944)
-![minihome15](https://github.com/user-attachments/assets/9ea09325-dca3-462a-aac1-55f770253825)
-![minihome16](https://github.com/user-attachments/assets/dde64c9a-a3dd-4429-bde6-e491346d5688)
-![minihome17](https://github.com/user-attachments/assets/a1cc94fe-7728-459d-baf2-238456507a08)
-![minihome18](https://github.com/user-attachments/assets/2549e5b5-3af0-4e61-8769-fb7a52a48322)
+<img src="README/minihome1.webp" width="100%"/>
+<img src="README/minihome2.webp" width="100%"/>
+<img src="README/minihome3.webp" width="100%"/>
+<img src="README/minihome4.webp" width="100%"/>
+<img src="README/minihome5.webp" width="100%"/>
+<img src="README/minihome6.webp" width="100%"/>
+<img src="README/minihome7.webp" width="100%"/>
+<img src="README/minihome8.webp" width="100%"/>
+<img src="README/minihome9.webp" width="100%"/>
+<img src="README/minihome10.webp" width="100%"/>
+<img src="README/minihome11.webp" width="100%"/>
+<img src="README/minihome12.webp" width="100%"/>
+<img src="README/minihome13.webp" width="100%"/>
+<img src="README/minihome14.webp" width="100%"/>
+<img src="README/minihome15.webp" width="100%"/>
+<img src="README/minihome16.webp" width="100%"/>
+<img src="README/minihome17.webp" width="100%"/>
+<img src="README/minihome18.webp" width="100%"/>
