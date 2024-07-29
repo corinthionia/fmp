@@ -45,7 +45,7 @@
 					</p>
 					
 					<div class="bottom">
-						<span class="user-name">${username}</span>
+						<span class="user-name">김주현</span>
 						<a href="https://github.com/corinthionia" target="_blank">
 							<span class="link">https://github.com/corinthionia</span>
 						</a>
@@ -59,7 +59,7 @@
 			
 			
 			<div class="right-top">
-				<spam>${username} 님의 미니홈피</spam>
+				<spam>김주현 님의 미니홈피</spam>
 			</div>
 			<section class="main">
 				<section class="main-content">
