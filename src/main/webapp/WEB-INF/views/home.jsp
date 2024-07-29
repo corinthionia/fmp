@@ -95,8 +95,8 @@
 				    			     
 				    <form action="/comment" method="post">
 				        <label>일촌평</label>
-				        <input type="text" id="nickname" name="nickname" placeholder="닉네임" required>
-				        <input id="commentText" name="commentText" placeholder="일촌과 나누고 싶은 이야기를 남겨보세요~!" required>
+				        <input type="text" id="nickname" name="nickname" placeholder="닉네임" autocomplete="off" required>
+				        <input id="commentText" name="commentText" placeholder="일촌과 나누고 싶은 이야기를 남겨보세요~!" autocomplete="off" required>
 				        <button type="submit" id="submit-button">확인</button>
 				    </form>
 				    

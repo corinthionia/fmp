@@ -24,7 +24,7 @@
   				<img src="/resources/images/login_logo.png" alt="로고" class="logo"/>
   				<div class="input-wrapper">
   					<div class="input">
-  						<input type="text" name="name" placeholder="한글 이름" required>
+  						<input type="text" name="name" placeholder="한글 이름" autocomplete="off" required>
   						<span class="error-message">
     						<c:if test="${not empty nameError}">
                 				${nameError}
@@ -32,7 +32,7 @@
             			</span>
             		</div>
             		<div class="input">
-	    				<input type="password" name="password" placeholder="4자리 숫자 비밀번호" maxLength="4" required>
+	    				<input type="password" name="password" placeholder="4자리 숫자 비밀번호" maxLength="4" autocomplete="off" required>
 	    				<span class="error-message">
 	    					<c:if test="${not empty passwordError}">
 	                			${passwordError}
