@@ -25,6 +25,7 @@ public class CommentController {
 		try {
 			// 현재 로그인한 사용자 정보
             Integer userId = (Integer) session.getAttribute("userId");
+            String username = (String) session.getAttribute("username");
             
             if (userId == null) {
                 model.addAttribute("error", "로그인이 필요합니다");
@@ -33,10 +34,8 @@ public class CommentController {
             
 			List<Comment> comments = service.readAll();	
 			model.addAttribute("comments", comments);
-			model.addAttribute("currentUserId", userId);
 			
-			// 세션에서 사용자 이름 읽기
-            String username = (String) session.getAttribute("username");
+			model.addAttribute("currentUserId", userId);
             model.addAttribute("username", username);
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -83,9 +83,11 @@
 				        		<span class="id">NO.${guestbook.guestbookId}</span>
 				        		<span class="name">${guestbook.username}</span>
 				        		<span class="createdAt">(${guestbook.createdAt})</span>
-				        		 <a href="/guestbook/delete?id=${guestbook.guestbookId}">
-					             	<img src="/resources/icons/home_delete.svg" alt="삭제 아이콘" class="guestbook-delete-button">
-				              	</a>
+				        		<c:if test="${guestbook.userId == currentUserId}">
+				        			<a href="/guestbook/delete?id=${guestbook.guestbookId}">
+					             		<img src="/resources/icons/home_delete.svg" alt="삭제 아이콘" class="guestbook-delete-button">
+				              		</a>
+				        		</c:if>
 				        	</div>
 				        	
 				        	<div class="guestbook-content">

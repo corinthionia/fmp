@@ -23,12 +23,15 @@ public class GuestbookController {
 	@GetMapping("/guestbook")
 	public String list(Model model, HttpSession session) { 
 		try {
+			// 현재 로그인한 사용자 정보
+            Integer userId = (Integer) session.getAttribute("userId");
+            String username = (String) session.getAttribute("username");
+            
 			List<Guestbook> guestbooks = service.readAll();	
 			model.addAttribute("guestbooks", guestbooks);
 			
-			// 세션에서 사용자 이름 읽기
-            String username = (String) session.getAttribute("username");
             model.addAttribute("username", username);
+            model.addAttribute("currentUserId", userId);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
