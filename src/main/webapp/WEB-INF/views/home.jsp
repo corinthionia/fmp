@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
     <link rel="stylesheet" href="resources/css/global.css">
     <link rel="stylesheet" href="resources/css/home.css">
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
 </head>
 <body>
 	<div class="background">
@@ -104,9 +109,11 @@
 				                		(${comment.nickname} <span class="comment-user-name">${comment.username}</span>)
 				                	</span>
 				                	 <span class="comment-createdAt">${comment.createdAt}</span>
-				                	  <a href="/delete?id=${comment.commentId}">
+				                	 <c:if test="${comment.userId == currentUserId}">
+				                	 	<a href="/delete?id=${comment.commentId}">
 					                	<img src="/resources/icons/home_delete.svg" alt="삭제 아이콘" class="comment-delete-button">
-				               		 </a>
+				               		 	</a>
+				                	 </c:if>
 				                </span>
 				               
 				            </li>
@@ -117,5 +124,12 @@
 	    </main>
 	    </div>
     </div>
+    
+      	
+   	<c:if test="${not empty error}">
+        <script>
+            showAlert("${error}");
+        </script>
+    </c:if>
 </body>
 </html>

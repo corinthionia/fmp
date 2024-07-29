@@ -39,4 +39,8 @@ public class CommentServiceImpl implements CommentService {
 	public List<Comment> readAll() throws SQLException {
 		return dao.selectAll();
 	}
+	
+	 public int findCommentAuthor(int commentId) throws SQLException {
+	        return dao.selectCommentAuthor(commentId);
+	    }
 }

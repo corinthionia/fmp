@@ -11,4 +11,5 @@ public interface CommentService {
 	public int remove(int commentId)throws SQLException;
 	public Comment read(int commentId)throws SQLException;
 	public List<Comment> readAll()throws SQLException;
+	public int findCommentAuthor(int commentId) throws SQLException;
 }

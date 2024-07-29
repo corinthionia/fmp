@@ -116,6 +116,29 @@ public class CommentDAOImpl implements CommentDAO {
 		
 		return list;
 	}
+	
+	@Override
+    public Integer selectCommentAuthor (int commentId) throws SQLException {
+		Connection conn = dbUtil.getConnection();
+		
+		String sql = "SELECT userId " +
+                	  "FROM comments " +
+                	  "WHERE id = ?";
+		
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
+		pstmt.setInt(1, commentId);
+		
+		ResultSet rs = pstmt.executeQuery();
+		Integer userId = null;
+		
+		if (rs.next()) {
+			userId = (Integer) rs.getInt("userId");
+		}
+		
+		return userId;
+	  
+    }
 
 }
 

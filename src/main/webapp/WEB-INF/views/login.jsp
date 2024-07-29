@@ -44,12 +44,6 @@
  	 		</form>
  	 	</div>
   	</main>
-  	
-<%--   	<c:if test="${not empty error}">
-        <script>
-            showAlert("${error}");
-        </script>
-    </c:if> --%>
 </body>
 </html>
 
