@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>방명록 | MiniHome</title>
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
     <link rel="stylesheet" href="resources/css/global.css">
     <link rel="stylesheet" href="resources/css/guestbook.css">
