@@ -9,7 +9,9 @@ cd ./fmp
    - 아이디 `minihome` 비밀번호 `miniHome1.1`
    - 혹은 `/src/main/java/com/minihome/util/DBUtil.java`에서 유저 정보를 변경합니다.
 4. 스프링 부트 서버를 실행합니다.
+5. **'http://localhost:8080/login' 으로 이동합니다.**
 
+<br/>
 
 ## 상세 설명
 <img src="README/minihome1.webp" width="100%"/>
