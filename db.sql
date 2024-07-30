@@ -1,0 +1,25 @@
+CREATE DATABASE minihome;
+USE minihome;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY UNIQUE,
+    name VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE comments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT NOT NULL,
+    nickname VARCHAR(50) NOT NULL,
+    commentText TEXT NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES users(id)
+);
+
+CREATE TABLE guestbooks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT NOT NULL,
+    guestbookText TEXT NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES users(id)
+);
